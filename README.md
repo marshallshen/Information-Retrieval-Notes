@@ -20,7 +20,6 @@ Information Retrieval Notes
     * What is the problem?
 
   - Inexact top-K query (Why inexact?)
-    * Google's original PageRank algorithm
     * Champion lists (Fancy lists)
 
   - Static quality scores
@@ -37,14 +36,30 @@ Information Retrieval Notes
     * How is it related to other scoring methods?
     * Early termination
     * idf-ordered terms
+    * Tiered indexes
+    * Query term proximity
+      1. Users prefer docs in which query terms occur within close promixity.
+
+  - Aggregate scores
+    * Function with multiple factors (cosine, static quality, proximity)
+    * Some applications - expert tuned
+    * More popular - machine-learned
 
   - Parametric and zone indexes
     * Why? A doc has multiple parts, some with special `metadata`, such as Author, Title, Date of publication, Language, Format...
 
 # Web Search
 ==============================================
+## Basic web search
+  - Difference between web search and regular information retrieval
 
+## Link analysis
+  - Google's original PageRank algorithm (Notes & Paper)
+  - Hub and Authority
 
+## Query for text database
+  - PromC, PromD, Query optimizer (Notes & Paper)
 
-
-
+## Snowball
+  - General idea
+  - How it works
